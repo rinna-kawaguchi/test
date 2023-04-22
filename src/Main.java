@@ -31,10 +31,5 @@ public class Main {
         sprinters.stream()
                 .sorted(Comparator.comparing(Sprinter::getAge).reversed())
                 .forEach(sprinter -> System.out.println(sprinter.getName()));
-
-        System.out.println("＜タイムが10.00秒の選手＞");
-        sprinters.stream()
-                .filter(sprinter ->  sprinter.getBestTime() == 10.00)
-                .forEach(sprinter -> System.out.println(sprinter.getName()));
     }
 }
