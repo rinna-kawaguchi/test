@@ -32,9 +32,9 @@ public class Main {
                 .sorted(Comparator.comparing(Sprinter::getAge).reversed())
                 .forEach(sprinter -> System.out.println(sprinter.getName()));
 
-        System.out.println("＜タイムが10.00秒の選手＞");
+        System.out.println("＜タイムが9.98秒の選手＞");
         sprinters.stream()
-                .filter(sprinter ->  sprinter.getBestTime() == 10.00)
+                .filter(sprinter ->  sprinter.getBestTime() == 9.98)
                 .forEach(sprinter -> System.out.println(sprinter.getName()));
     }
 }
